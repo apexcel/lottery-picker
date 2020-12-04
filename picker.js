@@ -18,7 +18,7 @@ function getInput() {
         how = line;
         rl.close();
     }).on('close', () => {
-        exection(how);
+        execution(how);
     });
 }
 
@@ -69,7 +69,7 @@ function isEqual(prized, picked) {
 }
 
 
-function exection(howmany) {
+function execution(howmany) {
     const prizedArray = prizeNumbersToArray(toJson);
     for (let i = 0; i < howmany; i++) {
         const pickedArray = lotteryPicker()
